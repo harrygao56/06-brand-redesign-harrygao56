@@ -1,0 +1,49 @@
+body {
+    margin: 0px;
+    font-family: MessinaSans,sans-serif;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(10, 10, 10);
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+}
+
+#logoPic {
+    height: 40px;
+}
+
+#text-pic {
+    height: 45px;
+    margin-left: 4%;
+    padding-bottom: 7px;
+}
+
+.header-buttons {
+    display: flex;
+    width: 650px;
+}
+
+.headerButton {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-weight: 0;
+    font-size: 1.3em;
+    margin-right: 12%;
+}
