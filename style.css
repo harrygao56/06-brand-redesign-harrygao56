@@ -68,7 +68,8 @@ body {
     left: 30vw;
     margin-top: 60px;
     display: flex;
-    width: 70vw;
+    width: 68.8vw;
+    flex-direction: column;
 }
 
 #search-label {
@@ -90,6 +91,8 @@ body {
     background-size: 25px;
     background-position: 95% 52%;
     background-repeat: no-repeat;
+    /*Code from*/
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
 }
 
 #sidebar-items {
@@ -125,11 +128,211 @@ body {
 
 #main-img-label {
     position: absolute;
-    top: 30vw;
+    top: 26vw;
     left: 12%;
     color: white;
     font-family: "Libre Baskerville","Times New Roman",serif;
     font-style: italic;
     text-align: center;
     font-size: 3vw;
+}
+
+.img-des {
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(24, 51, 27);
+}
+
+.img-des-text {
+    color: white;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 1.5vw;
+    margin: 7vh 3vw 7vh 3vw;
+    font-weight: 350;
+}
+
+#library-call-action {
+    width: 100%;
+    display: flex;
+}
+
+#library {
+    width: 50%;
+}
+
+#library-des {
+    width: 50%;
+    background-color: rgb(158, 20, 20);
+}
+
+#lib-des-text {
+    font-size: 1.1vw;
+}
+
+#des-open-hours {
+    font-size: 1.3vw;
+    font-weight: 450;
+}
+
+#img-des-text-2 {
+    font-family: "Libre Baskerville","Times New Roman",serif;
+    font-style: italic;
+    font-size: 1.8vw;
+}
+
+#facts {
+    display: flex;
+    background-color: #ececec;
+    justify-content:space-around;
+    padding: 7vh 3vw 7vh 3vw;
+}
+
+.facts-link {
+    text-decoration: none;
+    width: 25%;
+}
+
+.facts-link:hover .facts-des {
+    font-weight: 700;
+}
+
+.facts-des {
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.facts-img {
+    height: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hours-table {
+    font-size: 1.2vw;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-weight: 250;
+    border-collapse: collapse;
+}
+
+.table-header {
+    font-weight: 450;
+    font-size: 1.2vw;
+}
+
+.table-cell {
+    font-size: 1vw;
+    text-align: center;
+}
+
+td,tr {
+    padding: .7vw;
+    border-top: 1px solid rgb(185, 185, 185);
+}
+
+th {
+    padding-left: .7vw;
+    padding-right: .7vw;
+}
+
+#facilities-sec {
+    display: flex;
+    width: 100%;
+}
+
+#facilities-div {
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    padding: 7vh 3vw 7vh 3vw;
+}
+
+#facilities-title {
+    font-family: "Libre Baskerville","Times New Roman",serif;
+    font-style: italic;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#facilities-des {
+    font-size: 1.2vw;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-weight: 250;
+}
+
+#mckelvey {
+    display: flex;
+    width: 50%;
+}
+
+#research {
+    display: flex;
+    width: 50%;
+}
+
+@media (min-width: 1024px) {
+    #side-bar {
+        visibility: visible;
+    }
+
+    #main-area {
+        width: 68.8vw;
+        left: 30vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    #main-area {
+        width: 100%;
+        left: 0vw;
+    }
+
+    #side-bar {
+        visibility: hidden;
+    }
+
+    #main-img-label {
+        left: 24%;
+    }
+
+    .facts-des {
+        font-size: 1.3vw;
+    }
+
+    .img-des-text {
+        font-size: 1.6vw;
+    }
+
+    #img-des-text-2 {
+        font-size: 2.2vw;
+    }
+
+    #lib-des-text {
+        font-size: 1.3vw;
+    }
+
+    #des-open-hours {
+        font-size: 1.5vw;
+    }
+
+    .table-header {
+        font-size: 1.6vw;
+    }
+    
+    .table-cell {
+        font-size: 1.4vw;
+    }
+
+    #text-pic {
+        visibility: hidden;
+        width: 0%;
+    }
+
+    #logo {
+        width: 60px;
+    }
 }
